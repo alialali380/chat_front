@@ -1,12 +1,13 @@
-// lib/clientId.ts
 import { v4 as uuidv4 } from 'uuid';
 
+// دالة لاسترجاع معرف العميل من localStorage أو إنشاؤه إذا لم يكن موجودًا
 export function getClientId(): string {
-  if (typeof window === 'undefined') return '';
+  if (typeof window === 'undefined') return ''; // في حالة SSR
+
   let clientId = localStorage.getItem('client_id');
   if (!clientId) {
-    clientId = uuidv4();
-    localStorage.setItem('client_id', clientId);
+    clientId = uuidv4(); // توليد UUID جديد
+    localStorage.setItem('client_id', clientId); // تخزين في localStorage
   }
   return clientId;
 }
