@@ -32,7 +32,7 @@ const Chat = () => {
 
     // ✅ استخدم دالة مستقلة حتى نستطيع حذفها لاحقًا
     const handleMessage = (msg: Message) => {
-      console.log("📩 Received:", msg);
+      // console.log("📩 Received:", msg);
       setMessages((prev) => [...prev, msg]);
     };
 
