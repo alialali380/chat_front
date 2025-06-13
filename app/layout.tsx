@@ -1,10 +1,10 @@
 import './globals.css';
-import type { Metadata } from 'next';
+// import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'تطبيق المحادثة',
-  description: 'محادثة فورية بين المستخدمين',
-};
+// export const metadata: Metadata = {
+//   title: 'تطبيق المحادثة',
+//   description: 'محادثة فورية بين المستخدمين',
+// };
 
 export default function RootLayout({
   children,

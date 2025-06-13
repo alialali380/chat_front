@@ -58,6 +58,7 @@ const Chat = () => {
     }
   };
 
+  // دالة لتنسيق الوقت بالشكل ١٢:٣٤ ص
   const formatTime = (timestamp: string) =>
     new Intl.DateTimeFormat("ar-EG", {
       hour: "numeric",
