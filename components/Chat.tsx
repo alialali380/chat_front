@@ -53,7 +53,7 @@ const Chat = () => {
         text: message,
         username,
         timestamp: new Date().toISOString(),
-      });
+      })
       setMessage("");
     }
   };
@@ -73,7 +73,7 @@ const Chat = () => {
 
         <div className="flex-1 p-4 overflow-y-auto space-y-2 bg-gray-50 custom-scrollbar">
           {messages.map((msg, i) => {
-            const isMine = msg.id === clientId;
+            const isMine = msg.id === clientId; 
 
             return (
               <div
