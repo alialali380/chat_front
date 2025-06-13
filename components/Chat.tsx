@@ -65,7 +65,7 @@ const Chat = () => {
     }).format(new Date(timestamp));
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-4">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100">
       <div className="w-full max-w-2xl bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col h-[80vh]">
         <header className="bg-indigo-500 text-white text-center py-4 text-xl font-bold">
           غرفة الدردشة
